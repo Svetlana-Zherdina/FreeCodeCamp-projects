@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Employee Satisfaction Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" required placeholder="Enter your name"/></label>
+        <label id="email-label">Email<input type="email" id="email" required placeholder="Enter your email"/></label>
+        <label id="number-label">Age (optional)<input type="number" id="number" min="13" max="120" placeholder="Age"/></label>
+        </fieldset>
+        <fieldset>
+        <label>Which option best describes your current role in the company?</label>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Management</option>
+          <option value="2">Office personnel</option>
+          <option value="3">Support staff</option></select>
+          </fieldset>
+          <fieldset>
+          <label>Which option best describes your current satisfaction with your job?</label>
+            <label><input type="radio" name="satisfaction" class="inline" value="1">Fully satisfied</label>
+          <label><input type="radio" name="satisfaction" class="inline" value="2">In general, satisfied</label>
+          <label><input type="radio" name="satisfaction" class="inline" value="3">Unsatisfied</label>
+          </fieldset>
+          <fieldset>
+          <label>What would you like to see improved in your job?</label>
+          <label><input type="checkbox" name="improvement" class="inline" value="salary" />Salary</label>
+         <label><input type="checkbox" name="improvement" class="inline" value="duties" />Job duties</label>
+          <lable><input type="checkbox" name="improvement" class="inline" value="colleagues" />Colleagues relations</label>
+         <label><input type="checkbox" name="improvement" class="inline" value="management" />Company management</label>
+          </fieldset>
+          <fieldset>
+            <label>Any additional comments or suggestions?
+              <textarea name="comments" rows="3" cols="30" placeholder="Enter your comments here"></textarea>
+            </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit"/>
+            </form>
+  </body>
+</html>
